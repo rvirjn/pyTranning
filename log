@@ -1,0 +1,51 @@
+Started by user anonymous
+Building remotely on 10.198.10.19 in workspace /root/jenkins/workspace/python/nsxt/interop_python_nsxt_upgrade_tests
+[copy-to-slave] Copying 'id_rsa, id_rsa.pub, staging_setup_details.json, 19setup_details.json', excluding nothing, from 'file:/var/lib/jenkins/userContent/' on the master to 'file:/root/jenkins/workspace/python/nsxt/interop_python_nsxt_upgrade_tests/' on '10.198.10.19'.
+[interop_python_nsxt_upgrade_tests] $ /bin/sh -xe /tmp/hudson4409777228691874491.sh
++ sudo mkdir -p /root/.ssh
++ sudo mv id_rsa /root/.ssh/
++ sudo mv id_rsa.pub /root/.ssh/
++ sudo chmod 400 /root/.ssh/id_rsa
+[interop_python_nsxt_upgrade_tests] $ /bin/sh -xe /tmp/hudson6785302534644304563.sh
+[interop_python_nsxt_upgrade_tests] $ /bin/sh -xe /tmp/hudson2288229214645378469.sh
++ ./rst -i interop/jenkins/interarcbat_post.py -x esxiBuild=8169922 -x nsxBuild=8680772 -x vcBuild=8169921 -x windowIP=10.198.10.214 -x linuxIP=10.198.10.19 -x jenkinsUrl=http://10.198.10.71:8080/job/python/job/nsxt/job/interop_python_nsxt_upgrade_tests/25/ -x 'vSphereRelease=NSX T Eclipse vSphere 68'
+Syslog Web UI Here: http://logweb.eng.vmware.com/?syslogtag=1529923004.48
+Value of seed(randomly generated): 278933665699468134
+Logs: /tmp/test-rst-root-1529923004-23234
+Log file: /tmp/test-rst-root-1529923004-23234/test-rst.log
+VCF DB URL: https://vcf-board.eng.vmware.com:443/#!/index/rt-resultset/5b30c62a84d2ab652ac5af3f
+Racetrack URL: https://racetrack.eng.vmware.com/result.php?id=5175987
+********************************************************************************
+post_url https://vcf-board.eng.vmware.com/api/interarcstatus
+json_data to post {u'status': u'in progress', u'racetrackId': u'', u'vcBuild': '8169921', u'esxiBuild': '8169922', u'testsetname': u'batrun', 'windowIP': '10.198.10.214', 'linuxIP': '10.198.10.19', u'vSphereRelease': 'NSX T Eclipse vSphere 68', u'environment': u'Physical', u'window': u'10.X.X.X', u'interopTestDate': '2018-6-25 3:36:46', u'linux': u'10.X.X.X', u'jenkinsUrl': 'http://10.198.10.71:8080/job/python/job/nsxt/job/interop_python_nsxt_upgrade_tests/25/', u'nsxBuild': '8680772'}
+update request status code 200
+update request response code {"id": "5b30c62b84d2ab6529c59139"}
+results {u'id': u'5b30c62b84d2ab6529c59139'}
+ * interop.jenkins.interarcbat_post............................PASS (0s)
+
+ Results: PASS (1/1) in 2s.
+********************************************************************************
+[interop_python_nsxt_upgrade_tests] $ /bin/sh -xe /tmp/hudson4149372234367564327.sh
++ ./rst -i interop/setup/interop_cleanup.py
+Syslog Web UI Here: http://logweb.eng.vmware.com/?syslogtag=1529923007.95
+Value of seed(randomly generated): 1928743249364551520
+Logs: /tmp/test-rst-root-1529923007-23317
+Log file: /tmp/test-rst-root-1529923007-23317/test-rst.log
+VCF DB URL: https://vcf-board.eng.vmware.com:443/#!/index/rt-resultset/5b30c62d84d2ab652ac5af40
+Racetrack URL: https://racetrack.eng.vmware.com/result.php?id=5175988
+********************************************************************************
+ * interop.setup.interop_cleanup...............................FAIL (21s)
+   log: /tmp/test-rst-root-1529923007-23317/test-rst.interop.setup.interop_cleanup.log
+
+ Results: FAIL (1/1) in 23s.
+********************************************************************************
++ true
+[interop_python_nsxt_upgrade_tests] $ /bin/sh -xe /tmp/hudson8405396302956874455.sh
++ ./rst -i interop/jenkins/interarcbat_update.py -x esxiBuild=8169922 -x nsxBuild=8680772 -x vcBuild=8169921 -x windowIP=10.198.10.214 -x linuxIP=10.198.10.19 -x jenkinsUrl=http://10.198.10.71:8080/job/python/job/nsxt/job/interop_python_nsxt_upgrade_tests/25/ -x 'vSphereRelease=NSX T Eclipse vSphere 68'
+Syslog Web UI Here: http://logweb.eng.vmware.com/?syslogtag=1529923032.23
+Value of seed(randomly generated): 7958712708303504153
+Logs: /tmp/test-rst-root-1529923032-23403
+Log file: /tmp/test-rst-root-1529923032-23403/test-rst.log
+VCF DB URL: https://vcf-board.eng.vmware.com:443/#!/index/rt-resultset/5b30c64584d2ab6520c58fff
+Racetrack URL: https://racetrack.eng.vmware.com/result.php?id=5175989
+********************************************************************************

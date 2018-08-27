@@ -1,0 +1,36 @@
+<!--
+* Inte
+*
+-->
+
+<!DOCTYPE html>
+<html ng-app="interarcdb">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Bind Page Title with UI-Router state -->
+    <title ng-bind="$state.current.data.pageTitle"></title>
+
+    <!-- Google Open Sans -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<!-- ControllerAs syntax -->
+<!-- Main controller with serveral data used in Inspinia theme on diferent view -->
+<body ng-controller="interarcController as main">
+
+<!-- Main view  -->
+<div ui-view></div>
+
+<!-- Anglar App Script -->
+<script src="scripts/app.js"></script>
+<script src="scripts/interarc.js"></script>
+<h1>Hi Interarc</h1>
+
+</body>
+</html>
