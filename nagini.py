@@ -1,4 +1,4 @@
-__author__ = 'VMware'
+__author__ = 'Ravi Ranjan'
 __version__ = '1.7'
 
 import requests
