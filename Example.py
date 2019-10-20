@@ -1,4 +1,3 @@
-# Copyright 2017 VMware, Inc.  All rights reserved. -- VMware Confidential
 # Description:
 # Provisioning VM via Converged blueprint
 # Group-physical-st: optional
