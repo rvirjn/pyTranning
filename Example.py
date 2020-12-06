@@ -57,7 +57,7 @@ if __name__ == "__main__":
     multi = zip_with(lambda x, y: x * y)
 
    # print adder([1, 2, 3, 4], [5, 6, 7, 8])
-    print fold.__name__
+    print(fold.__name__)
     sum_= fold(add, default=3)
     #print sum_([1,2,3,4])
     unittest.main()
